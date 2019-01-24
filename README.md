@@ -30,22 +30,22 @@ confirming admission. Companies have a full-fledged panel to verify the document
 processes are very time consuming. This application is to help them save time and money and
 also ensures 100 percent true verification.
 
-# Technologies used
+## Technologies used
 
-## Backend
+### Backend
 - Node.js with express framework
 - Truffle 
 - Ethereum smart contract in solidity
 
-## Frontend
+### Frontend
 - Ejs 
 
-## Tools
+### Tools
 1. IPFS(InterPlanetary File System)
 
-# What does the process looks like ?
+## What does the process looks like ?
 
-## Issuing Process
+### Issuing Process
 1. Univeristy will have the degree(digital format) of the student.
 2. It will take the SHA256(Secure hash function) of the degree.(lets name it shaHash).
 3. After that, it will encrypt the degree using Advance Encrytion Standard(AES).It will get the common private key from that.
@@ -54,21 +54,21 @@ also ensures 100 percent true verification.
 6. Now it will give the credentials to the student to sign-in into the platform and also it will share the unique AES key with the student.
 7. Credentials will be attached to the particular univeristy enrollment number(UEN) which a student can't change.
 
-## Degree fetching process
+### Degree fetching process
 1. Now following from the above process, student have now the credentials needed to login on the platform and also the unique AES key to decrypt the degree.
 2. Now, the student will login to the platform, enter the AES key to get the digital format of the degree.
 3. in background, the platform (our code) will fetch the ipfs hash by calling the fetchIpfsHash() function of the smart contract by giving the enrollment number(attached to the user credentials).
 4. Then, it will fetch the encryted degree from IPFS and decrypt it using the AES key provided by student and make the decrypted degree available to the student.
 5. Student will download the degree.
 
-## Verification Process
+### Verification Process
 1. Student will send its digital degree which he just got from our platform to the verifier.
 2. Verifier will upload the degree to our platform and enter the UEN of the student.
 3. Our platform will fetch the sha256 hash of the degree which is saved against the provided UEN on the blockchain. It will call the fetchShaHash() function of the smart contract.
 4. Then it will take a local SHA256 hash of the uploaded degree and match the local and original hash.
 5. If the hash matches then degree is verified otherwise not.
 
-## Revoking Process
+### Revoking Process
 There is a feature where a university can revoke the degree of the student.
 
 1. Univeristy (owner of the smart contract) can call the revokeDegree() function of the smart contract to revoke a degee. It has to submit the UEN and revoke reason with it.
