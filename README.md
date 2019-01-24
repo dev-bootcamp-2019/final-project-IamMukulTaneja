@@ -89,3 +89,12 @@ project is minimized.
 What i feel is the end product of any project or idea must be impactful and the impact which
 our project can make excites me to implement this in future.
 
+
+# Deployment Steps
+
+## Testing
+1. I assume that you have ganache running on port 8545.
+2. Go to the main project directory from the terminal and enter command "bash test.sh".
+3. You will see that it will compile the contracts, migrate it to the environment and start testing the smart contract against the test written.
+4. It will give results at the end.
+
