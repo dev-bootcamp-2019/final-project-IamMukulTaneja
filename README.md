@@ -92,6 +92,11 @@ our project can make excites me to implement this in future.
 
 # Deployment Steps
 
+## Server
+1. I have not made the UI and server yet. I focused on making a smart contract only and testing it as much as i can.
+2. I am learning server side languages and will complete this project as soon as possible.
+
+
 ## Testing
 1. I assume that you have ganache running on port 8545.
 2. Go to the main project directory from the terminal and enter command "bash test.sh".
