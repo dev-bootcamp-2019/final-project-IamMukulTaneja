@@ -12,13 +12,13 @@ var web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
 //shaHash - 2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824
 
 
-
+// All the test are self-explainable.
 
 
 contract('AwardDegree', async (accounts) => {
 
     let awardDegreeVariable;
-
+    // Setting up contract for each test below
     before('setup contract for each test', async () => {
         awardDegreeVariable = await awardDegree.new({from:accounts[0]});
         let degreeAwarded = await awardDegreeVariable.awardDegree('20214803115',

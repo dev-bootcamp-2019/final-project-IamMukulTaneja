@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>One Stop Verifiaction</title>
+  <script src="./Scripts/app.js"></script>
+</head>
+<body>
+    <h1>Contract Interaction</h1>
+
+    <fieldset>
+    <legend> Award Degree</legend>
+    <form onsubmit= App.awardDegree()>
+        <label for="EnrollNum">University Enrollment Number(UEN):</label>
+        <input type = "text" id="EnrollNum" name="EnrollNum">
+    
+        <br>
+        <br>
+        <br>
+    
+        <label for="IpfsHash">IpfsHash:  </label>
+        <input type="text" id="IpfsHash" name="IpfsHash">
+    
+        <br>
+        <br>
+        <br>
+
+        <label for="ShaHash">ShaHash:  </label>
+        <input type="text" id="ShaHash" name="ShaHash">
+    
+        <br>
+        <br>
+        <br>
+
+        <button>Award Degree</button>
+    </form>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Degree Status</legend>
+        <form>
+            <label for="EnrollNum">University Enrollment Number(UEN):</label>
+            <input type = "text" id="EnrollNum" name="EnrollNum">
+        
+        
+            <button>Get Status</button>
+        </form>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Revoke Status</legend>
+        <form>
+            <label for="EnrollNum">University Enrollment Number(UEN): </label>
+            <input type = "text" id="EnrollNum" name="EnrollNum">
+            <button>Get Status</button>
+        </form>
+    </fieldset>
+    
+    <fieldset>
+        <legend> getIPFSHash</legend>
+        <form action="/university/award" method="POST">
+            <label for="EnrollNum">University Enrollment Number(UEN):</label>
+            <input type = "text" id="EnrollNum" name="EnrollNum">
+        
+            <br>
+            <br>
+            <br>
+        
+            <button>GetHash</button>
+        </form>
+        </fieldset>
+    
+    <fieldset>
+            <legend> getSHAHash</legend>
+            <form action="/university/award" method="POST">
+                <label for="EnrollNum">University Enrollment Number(UEN):</label>
+                <input type = "text" id="EnrollNum" name="EnrollNum">
+            
+                <br>
+                <br>
+                <br>
+            
+                <button>GetHash</button>
+            </form>
+     </fieldset>
+    
+     <fieldset>
+        <legend> Revoke Degree</legend>
+        <form action="/university/award" method="POST">
+            <label for="EnrollNum">University Enrollment Number(UEN):</label>
+            <input type = "text" id="EnrollNum" name="EnrollNum">
+        
+            <br>
+            <br>
+            <br>
+            <label for="RevokeReason">Select Revoke Reason: </label>
+            <select name="reason">
+                <option value="1">Fraud</option>
+                <option value="2">Criminal Case</option>
+                <option value="3">Other</option>
+            </select>
+    
+            <button>Revoke Degree</button>
+        </form>
+        </fieldset>
+    
+    
+    
+</body>
+</html>
