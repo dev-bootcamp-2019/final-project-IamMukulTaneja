@@ -3,6 +3,7 @@
 [![Hit-Counter](http://hits.dwyl.io/IamMukulTaneja/OneStopVerification.svg)](http://hits.dwyl.io/IamMukulTaneja/OneStopVerification) 
 [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://gitHub.com/IamMukulTaneja/OneStopVerification)  [![made-with-ethereum](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Heimdall Scanner](https://heimdall.maddevs.io/badge/github/dev-bootcamp-2019/final-project-IamMukulTaneja)](https://heimdall.maddevs.io/report/github/dev-bootcamp-2019/final-project-IamMukulTaneja)
 
 # Problem I am trying to solve
 
